@@ -6,6 +6,7 @@ class House
   def initialize(price, address)
     @price = price
     @address = address
+    @rooms = []
   end
 
   def price
@@ -17,4 +18,7 @@ class House
     "#{@address}"
   end
 
+  def rooms
+    @rooms
+  end
 end
