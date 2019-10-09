@@ -27,4 +27,12 @@ class House
     @rooms.select {|room| room.category == category}
   end
 
+  def area
+    house_area = 0
+    @rooms.each do |room|
+      house_area += room.length * room.width
+    end
+    house_area
+  end
+
 end
